@@ -45,7 +45,7 @@ describe('Sign Up Page', () => {
   context('Form Validations', () => {
     const fields = [
       {
-        title: 'Email',
+        title: 'EMAIL',
         name: 'email',
         inputType: INPUT,
         errors: [
@@ -60,7 +60,7 @@ describe('Sign Up Page', () => {
         ]
       },
       {
-        title: 'Password',
+        title: 'PASSWORD',
         name: 'password',
         inputType: INPUT,
         errors: [

@@ -6,6 +6,7 @@ import { useSession, useDispatch } from 'hooks';
 import LoginForm from 'components/user/LoginForm';
 import { login } from 'state/actions/userActions';
 import routes from 'constants/routesPaths';
+import AuthWrapper from '../components/common/AuthWrapper';
 
 const LoginPage = () => {
   const { authenticated } = useSession();
@@ -16,15 +17,12 @@ const LoginPage = () => {
   }
 
   return (
-    <div>
-      <p>
-        <FormattedMessage id="login.title" />
-      </p>
+    <AuthWrapper>
       <LoginForm onSubmit={loginRequest} />
       <Link to={routes.signUp}>
         <FormattedMessage id="login.signup" />
       </Link>
-    </div>
+    </AuthWrapper>
   );
 };
 
