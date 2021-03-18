@@ -10,7 +10,7 @@ import { login as loginValidations } from 'utils/constraints';
 import { useStatus, useForm, useValidation, useTextInputProps } from 'hooks';
 import { login } from 'state/actions/userActions';
 
-import './LoginForm.scss'
+import './LoginForm.scss';
 
 const messages = defineMessages({
   email: { id: 'login.form.email' },

@@ -32,14 +32,20 @@
   height: 100%;
 }
 
+span {
+
+  white-space: pre-line;
+
+}
+
 label {
   
   //display: block;
   width: 102.26px;
   height: 15px;
-  left: 298px;
-  top: 363px;
+  
 
+  
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -69,6 +75,7 @@ input {
 
 button {
 
+  margin-top: 3%;
   width: 185px;
   height: 37px;
   left: 257px;
