@@ -6,8 +6,8 @@ import { useSession, useDispatch } from 'hooks';
 import LoginForm from 'components/user/LoginForm';
 import { login } from 'state/actions/userActions';
 import routes from 'constants/routesPaths';
-import AuthWrapper from '../components/common/AuthWrapper';
-import LoginDescription from '../components/user/LoginDescription';
+import AuthWrapper from 'components/common/AuthWrapper';
+import LoginDescription from 'components/user/LoginDescription';
 
 import './LoginPage.scss';
 
