@@ -7,6 +7,8 @@ import { signUp } from 'state/actions/userActions';
 import SignUpForm from 'components/user/SignUpForm';
 import routes from 'constants/routesPaths';
 
+import './SignUpPage.scss';
+
 const SignUpPage = () => {
   const { authenticated } = useSession();
   const signUpRequest = useDispatch(signUp);
@@ -16,7 +18,7 @@ const SignUpPage = () => {
   }
 
   return (
-    <div>
+    <div className="container-fluid h-100 signUpContainer">
       <p>
         <FormattedMessage id="signup.title" />
       </p>
