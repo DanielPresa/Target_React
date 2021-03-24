@@ -1,4 +1,4 @@
-import React, { memo, Fragment } from 'react';
+import React, { memo } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
