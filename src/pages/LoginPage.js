@@ -1,4 +1,4 @@
-import React, { memo, Fragment } from 'react';
+import React, { memo } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
@@ -11,7 +11,6 @@ import LoginDescription from '../components/user/LoginDescription';
 
 import './LoginPage.scss';
 
-
 const LoginPage = () => {
   const { authenticated } = useSession();
   const loginRequest = useDispatch(login);
@@ -21,14 +20,13 @@ const LoginPage = () => {
   }
 
   return (
-      <AuthWrapper>
-        <LoginDescription>
-        </LoginDescription>
-          <LoginForm onSubmit={loginRequest} />
-          <Link className='signUpLink' to={routes.signUp}>
-            <FormattedMessage id="login.signup" />
-          </Link>
-      </AuthWrapper>
+    <AuthWrapper>
+      <LoginDescription />
+      <LoginForm onSubmit={loginRequest} />
+      <Link className="signUpLink" to={routes.signUp}>
+        <FormattedMessage id="login.signup" />
+      </Link>
+    </AuthWrapper>
   );
 };
 

@@ -1,6 +1,6 @@
 @import '../../styles/styles.scss';
 
-.formContainer {
+.formContainer{
 
     display: grid;
     justify-content: center;
@@ -13,14 +13,14 @@
     
     &__mockAppImg {
         
-        max-width:550px;
-        max-height:800px;
+        max-width:550rem;
+        max-height:800rem;
         
     }
 
 }
 
-a {
+a{
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -31,6 +31,6 @@ a {
     text-align: center;
     letter-spacing: 1.65px;
 
-    color: #000000;
+    color: $font-base-color;
 }
 
