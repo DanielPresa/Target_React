@@ -5,9 +5,9 @@
 .loading-wrapper {
   align-items: center;
   display: flex;
-  height: 5rem;
+  height: 0,3rem;
   justify-content: center;
-  width: 5rem;
+  width: 0,3rem;
 
   // These two classes are required by react-loaders
   .loader-hidden {
@@ -20,11 +20,11 @@
 }
 
 .header {
-  padding: 1rem;
+  padding: 0,06rem;
   text-align: center;
 
   &__logo {
-    width: 150px;
+    width: 10rem;
   }
 }
 
@@ -35,6 +35,7 @@
 span {
 
   white-space: pre-line;
+  display: block;
 
 }
 
@@ -97,6 +98,7 @@ button {
 .bg-primary {
   background-color: $primary-color;
 }
+
 
 html,
 body {
