@@ -15,7 +15,6 @@ const App = () => {
       <Helmet>
         <title>RS React Redux Base</title>
       </Helmet>
-      <Header />
       <BrowserRouter>
         <Switch>
           {routes.map((route, index) => (
