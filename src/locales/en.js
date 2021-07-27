@@ -9,8 +9,9 @@ export default {
   'login.forgot_password': 'Forgot your password?',
 
   'signup.title': 'SIGN UP',
-  'signup.signin': 'SIGN UP',
+  'signup.signin': 'SIGN IN',
   'signup.form.passconfirmation': 'CONFIRM PASSWORD',
+  'signup.form.submit': 'SIGN UP',
 
   'logout.button': 'LOGOUT',
 
