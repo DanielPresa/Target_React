@@ -6,6 +6,7 @@ import { useSession, useDispatch } from 'hooks';
 import { signUp } from 'state/actions/userActions';
 import SignUpForm from 'components/user/SignUpForm';
 import routes from 'constants/routesPaths';
+import AuthWrapper from 'components/common/AuthWrapper';
 
 import './SignUpPage.scss';
 
@@ -18,15 +19,15 @@ const SignUpPage = () => {
   }
 
   return (
-    <div className="container-fluid h-100 signUpContainer">
+    <AuthWrapper>
       <p>
         <FormattedMessage id="signup.title" />
       </p>
       <SignUpForm onSubmit={signUpRequest} />
-      <Link to={routes.login}>
+      <Link className="signin-link" to={routes.login}>
         <FormattedMessage id="signup.signin" />
       </Link>
-    </div>
+    </AuthWrapper>
   );
 };
 
