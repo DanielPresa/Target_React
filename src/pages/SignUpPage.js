@@ -10,6 +10,8 @@ import AuthWrapper from '../components/common/AuthWrapper';
 
 import './SignUpPage.scss';
 
+import './SignUpPage.scss';
+
 const SignUpPage = () => {
   const { authenticated } = useSession();
   const signUpRequest = useDispatch(signUp);
