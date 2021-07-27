@@ -20,3 +20,23 @@
     text-align: center;
     text-decoration: none;
 }
+
+.signInLink {
+
+    margin-top: 15%;
+    margin-bottom: 5%;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1.65px;
+
+    color: $font-base-color;
+
+}
