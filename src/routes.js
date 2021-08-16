@@ -6,10 +6,12 @@ import LoginPage from 'pages/LoginPage';
 import SignUpPage from 'pages/SignUpPage';
 import NotFoundPage from 'pages/NotFoundPage';
 
+import HomeWrapper from 'components/common/HomeWrapper';
+
 const routes = [
   {
     path: routesPaths.index,
-    component: <HomePage />,
+    component: HomeWrapper(HomePage),
     exact: true,
     private: true
   },
